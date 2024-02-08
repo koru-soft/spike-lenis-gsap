@@ -10,8 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.3.5",
     "@astrojs/check": "^0.5.0",
+    "@studio-freight/lenis": "^1.0.34",
+    "astro": "^4.3.5",
+    "gsap": "^3.12.5",
     "typescript": "^5.3.3"
   }
 }

@@ -1,0 +1,65 @@
+---
+import { Image } from "astro:assets";
+import girl from "../../../public/girl.jpg";
+import sky from "../../../public/sky.jpg";
+import boy from "../../../public/boy.jpg";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div class="ystack">
+      <Image src={girl} alt="アニメキャラ" width="600" />
+      <Image src={sky} alt="アニメキャラ" width="600" />
+      <Image src={boy} alt="アニメキャラ" width="600" />
+      <footer>
+        著作者：<a
+          href="https://jp.freepik.com/free-photo/anime-style-character-in-space_122494500.htm#page=2&query=%E3%82%A2%E3%83%8B%E3%83%A1%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88&position=3&from_view=keyword&track=ais&uuid=038abcfa-bf5b-41cc-9a9c-689c469007b0"
+          >Freepik</a
+        >
+      </footer>
+    </div>
+
+    <style>
+      body {
+        background: #000000;
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ystack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        text-align: center;
+        color: #ffffff;
+      }
+    </style>
+
+    <script type="module">
+      // import gsap from "../../node_modules/gsap/index.js";
+
+      // gsap.to(".box", {
+      //   scrollTrigger: ".box", // start animation when ".box" enters the viewport
+      //   y: 1000,
+      // });
+    </script>
+  </body>
+</html>

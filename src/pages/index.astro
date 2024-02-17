@@ -3,14 +3,40 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div class="title">スクロールの世界にようこそ！</div>
+    <div class="select">
+      <a href="/gallery">サンプル１</a>
+    </div>
+  </body>
+
+  <style>
+    body {
+      background-color: rgb(48, 48, 48);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      width: auto;
+    }
+
+    .title {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .select {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: white;
+    }
+  </style>
 </html>
